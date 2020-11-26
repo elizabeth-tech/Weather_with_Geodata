@@ -3,27 +3,37 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		7A0F9107256F730F00CBB419 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0F9106256F730F00CBB419 /* AppDelegate.swift */; };
 		7A0F9109256F730F00CBB419 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0F9108256F730F00CBB419 /* SceneDelegate.swift */; };
-		7A0F910B256F730F00CBB419 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0F910A256F730F00CBB419 /* ViewController.swift */; };
 		7A0F910E256F730F00CBB419 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A0F910C256F730F00CBB419 /* Main.storyboard */; };
 		7A0F9110256F731300CBB419 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A0F910F256F731300CBB419 /* Assets.xcassets */; };
 		7A0F9113256F731300CBB419 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A0F9111256F731300CBB419 /* LaunchScreen.storyboard */; };
+		7A0F911D256F75CE00CBB419 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 7A0F911C256F75CE00CBB419 /* Alamofire */; };
+		7A0F9121256F770500CBB419 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 7A0F9120256F770500CBB419 /* SwiftyJSON */; };
+		7A0F9125256F7AE700CBB419 /* CitiesTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0F9124256F7AE700CBB419 /* CitiesTableVC.swift */; };
+		7A0F9128256F7BBE00CBB419 /* CitiesNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0F9127256F7BBE00CBB419 /* CitiesNameCell.swift */; };
+		7A0F912B256F879000CBB419 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0F912A256F879000CBB419 /* DetailVC.swift */; };
+		7A0F9132256F8E6100CBB419 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A0F9131256F8E6100CBB419 /* Roboto-Regular.ttf */; };
+		7A0F9135256F8E7100CBB419 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A0F9134256F8E7100CBB419 /* Roboto-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7A0F9103256F730F00CBB419 /* WeatherProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A0F9106256F730F00CBB419 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A0F9108256F730F00CBB419 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7A0F910A256F730F00CBB419 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7A0F910D256F730F00CBB419 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7A0F910F256F731300CBB419 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A0F9112256F731300CBB419 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A0F9114256F731300CBB419 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A0F9124256F7AE700CBB419 /* CitiesTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesTableVC.swift; sourceTree = "<group>"; };
+		7A0F9127256F7BBE00CBB419 /* CitiesNameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesNameCell.swift; sourceTree = "<group>"; };
+		7A0F912A256F879000CBB419 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		7A0F9131256F8E6100CBB419 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		7A0F9134256F8E7100CBB419 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A0F9121256F770500CBB419 /* SwiftyJSON in Frameworks */,
+				7A0F911D256F75CE00CBB419 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,13 +70,25 @@
 			children = (
 				7A0F9106256F730F00CBB419 /* AppDelegate.swift */,
 				7A0F9108256F730F00CBB419 /* SceneDelegate.swift */,
-				7A0F910A256F730F00CBB419 /* ViewController.swift */,
+				7A0F9130256F8E4C00CBB419 /* Fonts */,
 				7A0F910C256F730F00CBB419 /* Main.storyboard */,
+				7A0F9127256F7BBE00CBB419 /* CitiesNameCell.swift */,
+				7A0F912A256F879000CBB419 /* DetailVC.swift */,
+				7A0F9124256F7AE700CBB419 /* CitiesTableVC.swift */,
 				7A0F910F256F731300CBB419 /* Assets.xcassets */,
 				7A0F9111256F731300CBB419 /* LaunchScreen.storyboard */,
 				7A0F9114256F731300CBB419 /* Info.plist */,
 			);
 			path = WeatherProject;
+			sourceTree = "<group>";
+		};
+		7A0F9130256F8E4C00CBB419 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7A0F9134256F8E7100CBB419 /* Roboto-Bold.ttf */,
+				7A0F9131256F8E6100CBB419 /* Roboto-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +107,10 @@
 			dependencies = (
 			);
 			name = WeatherProject;
+			packageProductDependencies = (
+				7A0F911C256F75CE00CBB419 /* Alamofire */,
+				7A0F9120256F770500CBB419 /* SwiftyJSON */,
+			);
 			productName = WeatherProject;
 			productReference = 7A0F9103256F730F00CBB419 /* WeatherProject.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +138,10 @@
 				Base,
 			);
 			mainGroup = 7A0F90FA256F730F00CBB419;
+			packageReferences = (
+				7A0F911B256F75CE00CBB419 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				7A0F911F256F770500CBB419 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = 7A0F9104256F730F00CBB419 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +158,8 @@
 			files = (
 				7A0F9113256F731300CBB419 /* LaunchScreen.storyboard in Resources */,
 				7A0F9110256F731300CBB419 /* Assets.xcassets in Resources */,
+				7A0F9135256F8E7100CBB419 /* Roboto-Bold.ttf in Resources */,
+				7A0F9132256F8E6100CBB419 /* Roboto-Regular.ttf in Resources */,
 				7A0F910E256F730F00CBB419 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,7 +171,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A0F910B256F730F00CBB419 /* ViewController.swift in Sources */,
+				7A0F912B256F879000CBB419 /* DetailVC.swift in Sources */,
+				7A0F9125256F7AE700CBB419 /* CitiesTableVC.swift in Sources */,
+				7A0F9128256F7BBE00CBB419 /* CitiesNameCell.swift in Sources */,
 				7A0F9107256F730F00CBB419 /* AppDelegate.swift in Sources */,
 				7A0F9109256F730F00CBB419 /* SceneDelegate.swift in Sources */,
 			);
@@ -339,6 +375,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7A0F911B256F75CE00CBB419 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
+		7A0F911F256F770500CBB419 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7A0F911C256F75CE00CBB419 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7A0F911B256F75CE00CBB419 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		7A0F9120256F770500CBB419 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7A0F911F256F770500CBB419 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7A0F90FB256F730F00CBB419 /* Project object */;
 }
