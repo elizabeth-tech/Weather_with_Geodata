@@ -19,6 +19,7 @@
 		7A0F912B256F879000CBB419 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0F912A256F879000CBB419 /* DetailVC.swift */; };
 		7A0F9132256F8E6100CBB419 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A0F9131256F8E6100CBB419 /* Roboto-Regular.ttf */; };
 		7A0F9135256F8E7100CBB419 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A0F9134256F8E7100CBB419 /* Roboto-Bold.ttf */; };
+		7AB6F8012570FE21007BDED0 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB6F8002570FE21007BDED0 /* MapVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		7A0F912A256F879000CBB419 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		7A0F9131256F8E6100CBB419 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		7A0F9134256F8E7100CBB419 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		7AB6F8002570FE21007BDED0 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				7A0F9130256F8E4C00CBB419 /* Fonts */,
 				7A0F910C256F730F00CBB419 /* Main.storyboard */,
 				7A0F9127256F7BBE00CBB419 /* CitiesNameCell.swift */,
+				7AB6F8002570FE21007BDED0 /* MapVC.swift */,
 				7A0F912A256F879000CBB419 /* DetailVC.swift */,
 				7A0F9124256F7AE700CBB419 /* CitiesTableVC.swift */,
 				7A0F910F256F731300CBB419 /* Assets.xcassets */,
@@ -172,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A0F912B256F879000CBB419 /* DetailVC.swift in Sources */,
+				7AB6F8012570FE21007BDED0 /* MapVC.swift in Sources */,
 				7A0F9125256F7AE700CBB419 /* CitiesTableVC.swift in Sources */,
 				7A0F9128256F7BBE00CBB419 /* CitiesNameCell.swift in Sources */,
 				7A0F9107256F730F00CBB419 /* AppDelegate.swift in Sources */,

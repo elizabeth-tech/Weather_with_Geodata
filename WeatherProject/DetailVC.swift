@@ -12,12 +12,16 @@ import SwiftyJSON
 class DetailVC: UIViewController
 {
     var cityName = ""
+    var lat = 0.0
+    var lon = 0.0
 
     @IBOutlet weak var detailCityName: UILabel!
     @IBOutlet weak var detailCityTemp: UILabel!
     @IBOutlet weak var detailDay: UILabel!
     @IBOutlet weak var detailData: UILabel!
     @IBOutlet weak var detailIcon: UIImageView!
+    @IBOutlet weak var detailLat: UILabel!
+    @IBOutlet weak var detailLon: UILabel!
     
     
     override func viewDidLoad()
@@ -56,6 +60,8 @@ class DetailVC: UIViewController
                     let temp = json["current"]["temp_c"].doubleValue
                     let iconURL = "https:\(json["current"]["condition"]["icon"].stringValue)" // Иконка
                     let myDateString = json["location"]["localtime"].stringValue // Дата
+                    self.lat = json["location"]["lat"].doubleValue // Широта
+                    self.lon = json["location"]["lon"].doubleValue // Долгота
          
                     // Получение из строки только даты
                     let dateFormatter = DateFormatter()
@@ -66,13 +72,14 @@ class DetailVC: UIViewController
                     
                     // Получение из строки только дня недели
                     let weekday = dateFormatter.weekdaySymbols[Calendar.current.component(.weekday, from: myDate!)]
-                    //print()
 
                     self.detailCityName.text = self.cityName
                     self.detailCityTemp.text = String(temp) + " °С"
                     self.detailIcon.image = UIImage(data: try! Data(contentsOf: URL(string: iconURL)!))
                     self.detailData.text = date
                     self.detailDay.text = weekday
+                    self.detailLat.text = String(self.lat)
+                    self.detailLon.text = String(self.lon)
                     
                 // Если ошибка при получении данных
                 case .failure(let error):
@@ -82,6 +89,20 @@ class DetailVC: UIViewController
 
     }
     
-
+    // Передаем на экран с картой данные широты и долготы
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        if let vc = segue.destination as? MapVC
+        {
+            vc.lat = self.lat
+            vc.lon = self.lon
+        }
+    }
+    
+    @IBAction func showMap(_ sender: Any)
+    {
+        performSegue(withIdentifier: "goToMap", sender: self)
+    }
+    
 
 }
